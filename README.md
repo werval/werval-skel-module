@@ -1,0 +1,1 @@
+# QiWeb Module Skeleton
