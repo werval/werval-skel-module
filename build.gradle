@@ -11,13 +11,8 @@ apply plugin: 'org.qiweb.module'
 moduleDescriptor.plugin 'example', impl: 'com.example.ExamplePlugin'
 
 dependencies {
-    // Add module compile dependencies here
-
-    runtime 'ch.qos.logback:logback-classic:1.1.2'
-    // Add module runtime dependencies here
-
     testCompile 'com.jayway.restassured:rest-assured:2.3.4'
-    // Add module test dependencies here
+    testRuntime 'ch.qos.logback:logback-classic:1.1.2'
 }
 
 // See http://www.gradle.org/documentation for build insights
