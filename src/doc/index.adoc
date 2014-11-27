@@ -1,0 +1,8 @@
+= Example Module
+Example QiWeb Module
+:jbake-type: module
+
+Document your module here.
+
+Applications using your module will gets this very documentation served under /@doc in development mode.
+

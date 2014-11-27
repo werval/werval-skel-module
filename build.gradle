@@ -1,0 +1,19 @@
+
+buildscript {   
+    repositories { 
+        maven { url qiwebLocalRepository }
+        maven { url "https://repo.codeartisans.org/qiweb" }
+    }
+    dependencies { classpath "org.qiweb:org.qiweb.gradle:$qiwebVersion" }
+}
+apply plugin: 'org.qiweb.module'
+
+moduleDescriptor.plugin 'example', impl: 'com.example.ExamplePlugin'
+
+dependencies {
+    testCompile 'com.jayway.restassured:rest-assured:2.3.4'
+    testRuntime 'org.slf4j:slf4j-simple:1.7.7'
+}
+
+// See http://www.gradle.org/documentation for build insights
+// And http://www.gradle.org/tooling for IDE support
