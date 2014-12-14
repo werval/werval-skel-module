@@ -1,5 +1,5 @@
 = Example Module
-Example QiWeb Module
+Example Werval Module
 :jbake-type: module
 
 Document your module here.

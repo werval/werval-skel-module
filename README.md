@@ -1,1 +1,1 @@
-# QiWeb Module Skeleton
+# Werval Module Skeleton

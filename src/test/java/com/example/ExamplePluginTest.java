@@ -17,7 +17,7 @@ package com.example;
 
 import org.junit.ClassRule;
 import org.junit.Test;
-import org.qiweb.test.QiWebHttpRule;
+import io.werval.test.WervalHttpRule;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -28,13 +28,13 @@ import static org.junit.Assert.assertThat;
 public class ExamplePluginTest
 {
     @ClassRule
-    public static final QiWebHttpRule QIWEB = new QiWebHttpRule();
+    public static final WervalHttpRule WERVAL = new WervalHttpRule();
 
     @Test
     public void greeting()
     {
         assertThat(
-            QIWEB.application().plugin( Example.class ).greeting( "World" ),
+            WERVAL.application().plugin( Example.class ).greeting( "World" ),
             equalTo( "Hello World!" )
         );
     }
@@ -43,7 +43,7 @@ public class ExamplePluginTest
     public void farewell()
     {
         assertThat(
-            QIWEB.application().plugin( Example.class ).farewell( "World" ),
+            WERVAL.application().plugin( Example.class ).farewell( "World" ),
             equalTo( "Goodbye World!" )
         );
     }
