@@ -1,8 +1,8 @@
 package com.example;
 
-import org.qiweb.api.Application;
-import org.qiweb.api.Plugin;
-import org.qiweb.api.exceptions.ActivationException;
+import io.werval.api.Application;
+import io.werval.api.Plugin;
+import io.werval.api.exceptions.ActivationException;
 
 // This is the ExamplePlugin, it manage the lifecycle of the API it exposes to the application code
 public class ExamplePlugin

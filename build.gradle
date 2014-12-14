@@ -1,13 +1,13 @@
 
 buildscript {   
     repositories { 
-        if( hasProperty( 'qiwebLocalRepository' ) ) maven { url qiwebLocalRepository }
-        maven { url "https://repo.codeartisans.org/qiweb" }
+        if( hasProperty( 'wervalLocalRepository' ) ) maven { url wervalLocalRepository }
+        maven { url "https://repo.codeartisans.org/werval" }
         jcenter()
     }
-    dependencies { classpath "org.qiweb:org.qiweb.gradle:$qiwebVersion" }
+    dependencies { classpath "io.werval:io.werval.gradle:$wervalVersion" }
 }
-apply plugin: 'org.qiweb.module'
+apply plugin: 'io.werval.module'
 
 moduleDescriptor.plugin 'example', impl: 'com.example.ExamplePlugin'
 
