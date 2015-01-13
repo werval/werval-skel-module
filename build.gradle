@@ -1,18 +1,13 @@
 
-buildscript {   
-    repositories { 
-        if( project.hasProperty( 'wervalLocalRepository' ) ) maven { url project.wervalLocalRepository }
-        jcenter()
-    }
-    dependencies { classpath "io.werval:io.werval.gradle:$wervalVersion" }
+plugins {
+    id 'io.werval.module' version '0.6.0'
 }
-apply plugin: 'io.werval.module'
 
 moduleDescriptor.plugin 'example', impl: 'com.example.ExamplePlugin'
 
 dependencies {
-    testCompile 'com.jayway.restassured:rest-assured:2.3.4'
-    testRuntime 'org.slf4j:slf4j-simple:1.7.7'
+    testCompile 'com.jayway.restassured:rest-assured:2.4.0'
+    testRuntime 'org.slf4j:slf4j-simple:1.7.10'
 }
 
 // See http://www.gradle.org/documentation for build insights
