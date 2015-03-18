@@ -1,6 +1,6 @@
 
 plugins {
-    id 'io.werval.module' version '0.7.1'
+    id 'io.werval.module' version '0.7.2'
 }
 
 moduleDescriptor.plugin 'example', impl: 'com.example.ExamplePlugin'
