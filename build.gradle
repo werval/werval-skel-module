@@ -1,13 +1,13 @@
 
 plugins {
-    id 'io.werval.module' version '0.7.2'
+    id 'io.werval.module' version '0.7.3'
 }
 
 moduleDescriptor.plugin 'example', impl: 'com.example.ExamplePlugin'
 
 dependencies {
     testCompile 'com.jayway.restassured:rest-assured:2.4.0'
-    testRuntime 'org.slf4j:slf4j-simple:1.7.10'
+    testRuntime 'org.slf4j:slf4j-simple:1.7.12'
 }
 
 // See http://www.gradle.org/documentation for build insights
